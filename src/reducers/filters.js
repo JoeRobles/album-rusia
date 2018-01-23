@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-const filtersReducerDefaultState = {
+export const filtersReducerDefaultState = {
   text: '',
   sortBy: 'date',
   asc: true,
@@ -35,7 +35,7 @@ export default (state = filtersReducerDefaultState, action) => {
         ...state,
         endDate: action.endDate,
       };
-    case 'ASCENDING':
+    case 'SET_ASCENDING':
       return {
         ...state,
         asc: action.asc,

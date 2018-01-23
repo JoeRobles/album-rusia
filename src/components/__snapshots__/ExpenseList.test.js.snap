@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseList with empty message 1`] = `
+<div>
+  <h1>
+    Expense List
+  </h1>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Description
+        </th>
+        <th>
+          Amount
+        </th>
+        <th>
+          Created at
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <p>
+        No expenses
+      </p>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`should render ExpenseList with expenses 1`] = `
+<div>
+  <h1>
+    Expense List
+  </h1>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Description
+        </th>
+        <th>
+          Amount
+        </th>
+        <th>
+          Created at
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <Connect(Component)
+        amount={54500}
+        createdAt={1514954400000}
+        description="January Rent"
+        expenses={
+          Array [
+            Object {
+              "amount": 54500,
+              "createdAt": 1514954400000,
+              "description": "January Rent",
+              "id": "poijasdfhwer",
+              "note": "This was the final payment for that address",
+            },
+            Object {
+              "amount": 100,
+              "createdAt": 1515085200000,
+              "description": "water bill",
+              "id": "lmdfmlgkdnfg",
+            },
+            Object {
+              "amount": 300,
+              "createdAt": 1515140400000,
+              "description": "gas bill",
+              "id": "fhgerthhrdhd",
+            },
+            Object {
+              "amount": 200,
+              "createdAt": 1515267500000,
+              "description": "internet bill",
+              "id": "sñojglsjslkg",
+            },
+          ]
+        }
+        id="poijasdfhwer"
+        key="poijasdfhwer"
+        note="This was the final payment for that address"
+      />
+      <Connect(Component)
+        amount={100}
+        createdAt={1515085200000}
+        description="water bill"
+        expenses={
+          Array [
+            Object {
+              "amount": 54500,
+              "createdAt": 1514954400000,
+              "description": "January Rent",
+              "id": "poijasdfhwer",
+              "note": "This was the final payment for that address",
+            },
+            Object {
+              "amount": 100,
+              "createdAt": 1515085200000,
+              "description": "water bill",
+              "id": "lmdfmlgkdnfg",
+            },
+            Object {
+              "amount": 300,
+              "createdAt": 1515140400000,
+              "description": "gas bill",
+              "id": "fhgerthhrdhd",
+            },
+            Object {
+              "amount": 200,
+              "createdAt": 1515267500000,
+              "description": "internet bill",
+              "id": "sñojglsjslkg",
+            },
+          ]
+        }
+        id="lmdfmlgkdnfg"
+        key="lmdfmlgkdnfg"
+      />
+      <Connect(Component)
+        amount={300}
+        createdAt={1515140400000}
+        description="gas bill"
+        expenses={
+          Array [
+            Object {
+              "amount": 54500,
+              "createdAt": 1514954400000,
+              "description": "January Rent",
+              "id": "poijasdfhwer",
+              "note": "This was the final payment for that address",
+            },
+            Object {
+              "amount": 100,
+              "createdAt": 1515085200000,
+              "description": "water bill",
+              "id": "lmdfmlgkdnfg",
+            },
+            Object {
+              "amount": 300,
+              "createdAt": 1515140400000,
+              "description": "gas bill",
+              "id": "fhgerthhrdhd",
+            },
+            Object {
+              "amount": 200,
+              "createdAt": 1515267500000,
+              "description": "internet bill",
+              "id": "sñojglsjslkg",
+            },
+          ]
+        }
+        id="fhgerthhrdhd"
+        key="fhgerthhrdhd"
+      />
+      <Connect(Component)
+        amount={200}
+        createdAt={1515267500000}
+        description="internet bill"
+        expenses={
+          Array [
+            Object {
+              "amount": 54500,
+              "createdAt": 1514954400000,
+              "description": "January Rent",
+              "id": "poijasdfhwer",
+              "note": "This was the final payment for that address",
+            },
+            Object {
+              "amount": 100,
+              "createdAt": 1515085200000,
+              "description": "water bill",
+              "id": "lmdfmlgkdnfg",
+            },
+            Object {
+              "amount": 300,
+              "createdAt": 1515140400000,
+              "description": "gas bill",
+              "id": "fhgerthhrdhd",
+            },
+            Object {
+              "amount": 200,
+              "createdAt": 1515267500000,
+              "description": "internet bill",
+              "id": "sñojglsjslkg",
+            },
+          ]
+        }
+        id="sñojglsjslkg"
+        key="sñojglsjslkg"
+      />
+    </tbody>
+  </table>
+</div>
+`;

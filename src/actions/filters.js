@@ -22,6 +22,6 @@ export const setEndDate = (endDate = undefined) => ({
 });
 
 export const setAscending = (asc = true) => ({
-  type: 'ASCENDING',
+  type: 'SET_ASCENDING',
   asc,
 });

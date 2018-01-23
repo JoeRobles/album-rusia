@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseListItem with empty message 1`] = `
+<tr>
+  <td />
+  <td />
+  <td />
+  <td>
+    <Link
+      replace={false}
+      to="/edit/undefined"
+    >
+      Edit
+    </Link>
+  </td>
+</tr>
+`;
+
+exports[`should render ExpenseListItem with expenses 1`] = `
+<tr>
+  <td>
+    January Rent
+  </td>
+  <td>
+    54500
+  </td>
+  <td>
+    1514954400000
+  </td>
+  <td>
+    <Link
+      replace={false}
+      to="/edit/poijasdfhwer"
+    >
+      Edit
+    </Link>
+  </td>
+</tr>
+`;
