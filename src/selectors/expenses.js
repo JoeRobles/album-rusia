@@ -19,7 +19,8 @@ export default (expenses, { text, sortBy, asc, startDate, endDate }) => {
     let ascending;
     if (sortBy === 'date') {
       ascending = setAsc(a.createdAt < b.createdAt);
-    } else if (sortBy === 'amount') {
+    }
+    if (sortBy === 'amount') {
       ascending = setAsc(a.amount < b.amount);
     }
 

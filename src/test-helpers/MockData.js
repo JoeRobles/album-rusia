@@ -35,3 +35,11 @@ export const filtersReducerDefaultState = {
   startDate: moment().startOf('month'),
   endDate: moment().endOf('month'),
 };
+
+export const filtersReducerMockState = {
+  text: 'bills',
+  sortBy: 'amount',
+  asc: true,
+  startDate: moment(0),
+  endDate: moment(0).add('3', 'days'),
+};

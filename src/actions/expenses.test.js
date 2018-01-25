@@ -10,6 +10,15 @@ it('should setup remove expense action object', () => {
   });
 });
 
+it('should not remove expense action object with non provided value', () => {
+  const action = removeExpense();
+
+  expect(action).toEqual({
+    type: 'REMOVE_EXPENSE',
+    id: '',
+  });
+});
+
 it('should setup edit expense action object', () => {
   const updates = {
     id: 'lmdfmlgkdnfg',
@@ -65,5 +74,14 @@ it('should setup show expense action object with provided values', () => {
   expect(action).toEqual({
     type: 'SHOW_EXPENSE',
     id: 'lmdfmlgkdnfg',
+  });
+});
+
+it('should not show expense action object with non provided values', () => {
+  const action = showExpense();
+
+  expect(action).toEqual({
+    type: 'SHOW_EXPENSE',
+    id: '',
   });
 });

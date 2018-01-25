@@ -2,7 +2,6 @@ import 'react-dates/initialize';
 import React, { Component } from 'react';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
-import 'react-dates/lib/css/_datepicker.css';
 
 export default class ExpenseForm extends Component {
   constructor(props) {
@@ -82,7 +81,7 @@ export default class ExpenseForm extends Component {
           placeholder="Add a note for your expense (optional)"
           value={this.state.note}
           onChange={this.onNoteChange}
-        ></textarea>
+        />
         <button onClick={() => {
         }}>Add Expense
         </button>

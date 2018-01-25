@@ -24,7 +24,7 @@ it('should filter by startDate', () => {
   const result = selectExpenses(expensesReducerDefaultState, filters);
   expect(result).toEqual([
     expensesReducerDefaultState[3],
-    expensesReducerDefaultState[2]
+    expensesReducerDefaultState[2],
   ]);
 });
 
@@ -40,7 +40,7 @@ it('should filter by endDate', () => {
   expect(result).toEqual([
     expensesReducerDefaultState[2],
     expensesReducerDefaultState[1],
-    expensesReducerDefaultState[0]
+    expensesReducerDefaultState[0],
   ]);
 });
 
@@ -57,7 +57,7 @@ it('should filter by date value', () => {
     expensesReducerDefaultState[3],
     expensesReducerDefaultState[2],
     expensesReducerDefaultState[1],
-    expensesReducerDefaultState[0]
+    expensesReducerDefaultState[0],
   ]);
 });
 
@@ -74,11 +74,14 @@ it('should filter by amount value', () => {
     expensesReducerDefaultState[0],
     expensesReducerDefaultState[2],
     expensesReducerDefaultState[3],
-    expensesReducerDefaultState[1]
+    expensesReducerDefaultState[1],
   ]);
 });
 
-it('DESCENDING', () => {
+describe('DESCENDING', () => {
+  beforeEach(() => {
+    return expensesReducerDefaultState.reverse();
+  });
   it('should filter by startDate', () => {
     const filters = {
       text: '',
@@ -89,8 +92,8 @@ it('DESCENDING', () => {
     };
     const result = selectExpenses(expensesReducerDefaultState, filters);
     expect(result).toEqual([
-      expensesReducerDefaultState[2],
-      expensesReducerDefaultState[3]
+      expensesReducerDefaultState[1],
+      expensesReducerDefaultState[0],
     ]);
   });
 
@@ -106,7 +109,7 @@ it('DESCENDING', () => {
     expect(result).toEqual([
       expensesReducerDefaultState[0],
       expensesReducerDefaultState[1],
-      expensesReducerDefaultState[2]
+      expensesReducerDefaultState[2],
     ]);
   });
 
@@ -120,10 +123,10 @@ it('DESCENDING', () => {
     };
     const result = selectExpenses(expensesReducerDefaultState, filters);
     expect(result).toEqual([
-      expensesReducerDefaultState[0],
-      expensesReducerDefaultState[1],
+      expensesReducerDefaultState[3],
       expensesReducerDefaultState[2],
-      expensesReducerDefaultState[3]
+      expensesReducerDefaultState[1],
+      expensesReducerDefaultState[0],
     ]);
   });
 
@@ -140,7 +143,7 @@ it('DESCENDING', () => {
       expensesReducerDefaultState[1],
       expensesReducerDefaultState[3],
       expensesReducerDefaultState[2],
-      expensesReducerDefaultState[0]
+      expensesReducerDefaultState[0],
     ]);
   });
 });

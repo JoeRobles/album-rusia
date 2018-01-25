@@ -16,11 +16,27 @@ it('should generate set start date action object', () => {
   });
 });
 
+it('should generate set start date action object with startDate undefined', () => {
+  const action = setStartDate(undefined);
+  expect(action).toEqual({
+    type: 'SET_START_DATE',
+    startDate: undefined,
+  });
+});
+
 it('should generate set end date action object', () => {
   const action = setEndDate(moment(0));
   expect(action).toEqual({
     type: 'SET_END_DATE',
     endDate: moment(0),
+  });
+});
+
+it('should generate set end date action object with endDate undefined', () => {
+  const action = setEndDate(undefined);
+  expect(action).toEqual({
+    type: 'SET_END_DATE',
+    endDate: undefined,
   });
 });
 

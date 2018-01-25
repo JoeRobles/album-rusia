@@ -34,9 +34,13 @@ it('should set text filter', () => {
     startDate: undefined,
     endDate: undefined,
   };
+  const text = 'gas';
   const state = filtersReducer(
     currentState,
-    { type: 'SORT_BY_TEXT' },
+    {
+      type: 'SET_TEXT_FILTER',
+      text
+    },
   );
   expect(state.text).toBe('gas');
 });

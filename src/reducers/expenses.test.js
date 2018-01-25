@@ -80,3 +80,12 @@ it('should not edit an expense if expense not found', () => {
   const state = expensesReducer(expensesReducerDefaultState, action);
   expect(state).toEqual(expensesReducerDefaultState);
 });
+
+it('should show expense by id', () => {
+  const action = {
+    type: 'SHOW_EXPENSE',
+    id: 'poijasdfhwer',
+  };
+  const state = expensesReducer(expensesReducerDefaultState, action);
+  expect(state).toEqual(expensesReducerDefaultState[0]);
+});
