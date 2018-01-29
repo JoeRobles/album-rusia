@@ -3,8 +3,12 @@
 exports[`should render ExpenseListItem with empty message 1`] = `
 <tr>
   <td />
-  <td />
-  <td />
+  <td>
+    $0.00
+  </td>
+  <td>
+    December 31st, 1969
+  </td>
   <td>
     <Link
       replace={false}
@@ -22,10 +26,10 @@ exports[`should render ExpenseListItem with expenses 1`] = `
     January Rent
   </td>
   <td>
-    54500
+    $545.00
   </td>
   <td>
-    1514954400000
+    January 2nd, 2018
   </td>
   <td>
     <Link
