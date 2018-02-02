@@ -38,6 +38,7 @@ exports[`should render ExpenseForm correctly 1`] = `
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
     isRTL={false}
+    keepFocusOnInput={false}
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
@@ -108,7 +109,7 @@ exports[`should render ExpenseForm correctly 1`] = `
   <button
     onClick={[Function]}
   >
-    Add Expense
+     Expense
   </button>
 </form>
 `;
@@ -151,6 +152,7 @@ exports[`should render ExpenseForm correctly when submit button clicked 1`] = `
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
     isRTL={false}
+    keepFocusOnInput={false}
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
@@ -221,7 +223,7 @@ exports[`should render ExpenseForm correctly when submit button clicked 1`] = `
   <button
     onClick={[Function]}
   >
-    Add Expense
+     Expense
   </button>
 </form>
 `;
@@ -264,6 +266,7 @@ exports[`should render ExpenseForm correctly with expense data 1`] = `
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
     isRTL={false}
+    keepFocusOnInput={false}
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
@@ -334,7 +337,7 @@ exports[`should render ExpenseForm correctly with expense data 1`] = `
   <button
     onClick={[Function]}
   >
-    Add Expense
+     Expense
   </button>
 </form>
 `;
@@ -377,6 +380,7 @@ exports[`should render error for invalid form submission 1`] = `
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
     isRTL={false}
+    keepFocusOnInput={false}
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
@@ -447,7 +451,7 @@ exports[`should render error for invalid form submission 1`] = `
   <button
     onClick={[Function]}
   >
-    Add Expense
+     Expense
   </button>
 </form>
 `;
@@ -490,6 +494,7 @@ exports[`should render error for invalid form submission 2`] = `
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
     isRTL={false}
+    keepFocusOnInput={false}
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
@@ -560,7 +565,7 @@ exports[`should render error for invalid form submission 2`] = `
   <button
     onClick={[Function]}
   >
-    Add Expense
+     Expense
   </button>
 </form>
 `;

@@ -83,7 +83,7 @@ export default class ExpenseForm extends Component {
           onChange={this.onNoteChange}
         />
         <button onClick={() => {
-        }}>Add Expense
+        }}>{this.props.action} Expense
         </button>
       </form>
     );
