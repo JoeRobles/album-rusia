@@ -1,13 +1,5 @@
 import * as firebase from 'firebase';
-
-const config = {
-  apiKey: 'AIzaSyDhKh7eOfkTiSPFhVXgrCXFXrPovUwACRk',
-  authDomain: 'expensify-eeb4c.firebaseapp.com',
-  databaseURL: 'https://expensify-eeb4c.firebaseio.com',
-  projectId: 'expensify-eeb4c',
-  storageBucket: 'expensify-eeb4c.appspot.com',
-  messagingSenderId: '995977824033',
-};
+import { config } from './config';
 
 firebase.initializeApp(config);
 const database = firebase.database();

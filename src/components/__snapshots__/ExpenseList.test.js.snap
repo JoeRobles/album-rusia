@@ -20,9 +20,11 @@ exports[`should render ExpenseList with empty message 1`] = `
       </tr>
     </thead>
     <tbody>
-      <p>
-        No expenses
-      </p>
+      <tr>
+        <td>
+          No expenses
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>

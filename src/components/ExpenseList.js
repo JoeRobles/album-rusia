@@ -17,7 +17,7 @@ export const ExpenseList = (props) => (
       <tbody>
       {
         props.expenses.length === 0 ? (
-          <p>No expenses</p>
+          <tr><td>No expenses</td></tr>
         ) : (
           props.expenses.map((expense) => {
             return <ExpenseListItem key={expense.id} {...expense} {...props} />;
