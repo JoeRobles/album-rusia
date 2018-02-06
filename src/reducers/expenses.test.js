@@ -60,7 +60,7 @@ it('should edit an expense', () => {
   expect(state).toEqual([
     {
       ...expensesReducerDefaultState[0],
-      ...updates
+      ...updates,
     },
     expensesReducerDefaultState[1],
     expensesReducerDefaultState[2],
@@ -88,4 +88,13 @@ it('should show expense by id', () => {
   };
   const state = expensesReducer(expensesReducerDefaultState, action);
   expect(state).toEqual(expensesReducerDefaultState[0]);
+});
+
+it('should set expenses', () => {
+  const action = {
+    type: 'SET_EXPENSES',
+    expenses: expensesReducerDefaultState[1],
+  };
+  const state = expensesReducer(expensesReducerDefaultState, action);
+  expect(state).toEqual(expensesReducerDefaultState[1]);
 });

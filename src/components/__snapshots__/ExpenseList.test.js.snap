@@ -26,6 +26,7 @@ exports[`should render ExpenseList with empty message 1`] = `
         </td>
       </tr>
     </tbody>
+    <Connect(Component) />
   </table>
 </div>
 `;
@@ -68,18 +69,21 @@ exports[`should render ExpenseList with expenses 1`] = `
               "createdAt": 1515085200000,
               "description": "water bill",
               "id": "lmdfmlgkdnfg",
+              "note": "",
             },
             Object {
               "amount": 300,
               "createdAt": 1515140400000,
               "description": "gas bill",
               "id": "fhgerthhrdhd",
+              "note": "",
             },
             Object {
               "amount": 200,
               "createdAt": 1515267500000,
               "description": "internet bill",
               "id": "sñojglsjslkg",
+              "note": "",
             },
           ]
         }
@@ -105,23 +109,27 @@ exports[`should render ExpenseList with expenses 1`] = `
               "createdAt": 1515085200000,
               "description": "water bill",
               "id": "lmdfmlgkdnfg",
+              "note": "",
             },
             Object {
               "amount": 300,
               "createdAt": 1515140400000,
               "description": "gas bill",
               "id": "fhgerthhrdhd",
+              "note": "",
             },
             Object {
               "amount": 200,
               "createdAt": 1515267500000,
               "description": "internet bill",
               "id": "sñojglsjslkg",
+              "note": "",
             },
           ]
         }
         id="lmdfmlgkdnfg"
         key="lmdfmlgkdnfg"
+        note=""
       />
       <Connect(Component)
         amount={300}
@@ -141,23 +149,27 @@ exports[`should render ExpenseList with expenses 1`] = `
               "createdAt": 1515085200000,
               "description": "water bill",
               "id": "lmdfmlgkdnfg",
+              "note": "",
             },
             Object {
               "amount": 300,
               "createdAt": 1515140400000,
               "description": "gas bill",
               "id": "fhgerthhrdhd",
+              "note": "",
             },
             Object {
               "amount": 200,
               "createdAt": 1515267500000,
               "description": "internet bill",
               "id": "sñojglsjslkg",
+              "note": "",
             },
           ]
         }
         id="fhgerthhrdhd"
         key="fhgerthhrdhd"
+        note=""
       />
       <Connect(Component)
         amount={200}
@@ -177,25 +189,30 @@ exports[`should render ExpenseList with expenses 1`] = `
               "createdAt": 1515085200000,
               "description": "water bill",
               "id": "lmdfmlgkdnfg",
+              "note": "",
             },
             Object {
               "amount": 300,
               "createdAt": 1515140400000,
               "description": "gas bill",
               "id": "fhgerthhrdhd",
+              "note": "",
             },
             Object {
               "amount": 200,
               "createdAt": 1515267500000,
               "description": "internet bill",
               "id": "sñojglsjslkg",
+              "note": "",
             },
           ]
         }
         id="sñojglsjslkg"
         key="sñojglsjslkg"
+        note=""
       />
     </tbody>
+    <Connect(Component) />
   </table>
 </div>
 `;

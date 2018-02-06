@@ -13,6 +13,18 @@ it('should filter by text value', () => {
   expect(result).toEqual([expensesReducerDefaultState[2]]);
 });
 
+it('should filter by text value', () => {
+  const filters = {
+    text: 'gas',
+    sortBy: 'date',
+    asc: true,
+    startDate: undefined,
+    endDate: undefined,
+  };
+  const result = selectExpenses(expensesReducerDefaultState, filters);
+  expect(result).toEqual([expensesReducerDefaultState[2]]);
+});
+
 it('should filter by startDate', () => {
   const filters = {
     text: '',

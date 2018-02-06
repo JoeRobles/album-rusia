@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Header correctly 1`] = `
-<Header
-  startLogout={[Function]}
+exports[`should render LoginPage correctly 1`] = `
+<Component
+  startLogin={[Function]}
   store={
     Object {
       "clearActions": [Function],

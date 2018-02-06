@@ -9,18 +9,21 @@ export const expensesReducerDefaultState = [
   {
     id: 'lmdfmlgkdnfg',
     description: 'water bill',
+    note: '',
     amount: 100,
     createdAt: 1515085200000,
   },
   {
     id: 'fhgerthhrdhd',
     description: 'gas bill',
+    note: '',
     amount: 300,
     createdAt: 1515140400000,
   },
   {
     id: 'sñojglsjslkg',
     description: 'internet bill',
+    note: '',
     amount: 200,
     createdAt: 1515267500000,
   },
@@ -46,6 +49,8 @@ export default (state = expensesReducerDefaultState, action) => {
           return expense;
         }
       });
+    case 'SET_EXPENSES':
+      return action.expenses;
     case 'SHOW_EXPENSE':
       return state.find(({ id }) => action.id === id);
     default:
