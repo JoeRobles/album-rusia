@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ExpenseForm from './ExpenseForm';
+import ExpenseForm from '../components/ExpenseForm';
 import { startAddExpense } from '../actions/expenses';
 
 export class AddExpensePage extends Component {

@@ -1,0 +1,24 @@
+.box-layout {
+  align-items: center;
+  background: url("/images/bg.jpg");
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw; }
+  .box-layout .box {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 0.1875rem;
+    padding: 2rem;
+    text-align: center; }
+    .box-layout .box .login-with-google {
+      background-image: url("/images/btn_google_signin_dark_normal_web@2x.png");
+      border: none;
+      height: 92px;
+      width: 382px; }
+      .box-layout .box .login-with-google:hover {
+        background-image: url("/images/btn_google_signin_dark_focus_web@2x.png"); }
+      .box-layout .box .login-with-google:active {
+        background-image: url("/images/btn_google_signin_dark_pressed_web@2x.png"); }
+      .box-layout .box .login-with-google:disabled {
+        background-image: url("/images/btn_google_signin_dark_disabled_web@2x.png"); }

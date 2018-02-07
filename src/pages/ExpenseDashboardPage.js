@@ -1,10 +1,10 @@
 import React from 'react';
-import ExpenseList from './ExpenseList';
-import ExpenseListFilters from './ExpenseListFilters';
+import ExpenseList from '../components/ExpenseList';
+import ExpenseListFilters from '../components/ExpenseListFilters';
 
 
 const ExpenseDashboardPage = () => (
-  <div>
+  <div className="container">
     <ExpenseListFilters />
     <ExpenseList />
   </div>

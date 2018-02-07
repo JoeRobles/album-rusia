@@ -1,0 +1,38 @@
+.box-layout {
+  align-items: center;
+  background: url("/images/bg.jpg");
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+
+  .box {
+    background: fade-out(white, .15);
+    border-radius: 0.1875rem;
+    padding: 2rem;
+    text-align: center;
+
+    .title {
+    }
+
+    .login-with-google {
+      background-image: url("/images/btn_google_signin_dark_normal_web@2x.png");
+      border: none;
+      height: 92px;
+      width: 382px;
+
+      &:hover {
+        background-image: url("/images/btn_google_signin_dark_focus_web@2x.png");
+      }
+
+      &:active {
+        background-image: url("/images/btn_google_signin_dark_pressed_web@2x.png");
+      }
+
+      &:disabled {
+        background-image: url("/images/btn_google_signin_dark_disabled_web@2x.png");
+      }
+    }
+  }
+}
