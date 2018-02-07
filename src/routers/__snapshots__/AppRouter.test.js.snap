@@ -1,24 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Header correctly 1`] = `
-<BrowserRouter>
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
   <div>
-    <Connect(Header) />
     <Switch>
       <Route
         component={[Function]}
         exact={true}
         path="/"
       />
-      <Route
+      <Connect(PrivateRoute)
         component={[Function]}
         path="/dashboard"
       />
-      <Route
+      <Connect(PrivateRoute)
         component={[Function]}
         path="/create"
       />
-      <Route
+      <Connect(PrivateRoute)
         component={[Function]}
         path="/edit/:id"
       />
@@ -31,5 +51,5 @@ exports[`should render Header correctly 1`] = `
       />
     </Switch>
   </div>
-</BrowserRouter>
+</Router>
 `;
