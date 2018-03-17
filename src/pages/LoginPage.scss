@@ -17,21 +17,21 @@
     }
 
     .login-with-google {
-      background-image: url("/images/btn_google_signin_dark_normal_web@2x.png");
+      background-image: url("/images/btn_google_signin_dark_normal_web.png");
       border: none;
-      height: 92px;
-      width: 382px;
+      height: 46px;
+      width: 191px;
 
       &:hover {
-        background-image: url("/images/btn_google_signin_dark_focus_web@2x.png");
+        background-image: url("/images/btn_google_signin_dark_focus_web.png");
       }
 
       &:active {
-        background-image: url("/images/btn_google_signin_dark_pressed_web@2x.png");
+        background-image: url("/images/btn_google_signin_dark_pressed_web.png");
       }
 
       &:disabled {
-        background-image: url("/images/btn_google_signin_dark_disabled_web@2x.png");
+        background-image: url("/images/btn_google_signin_dark_disabled_web.png");
       }
     }
   }

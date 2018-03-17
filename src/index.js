@@ -7,9 +7,9 @@ import 'react-dates/lib/css/_datepicker.css';
 
 import configureStore from './store/configureStore';
 import registerServiceWorker from './registerServiceWorker';
-import { startSetExpenses } from './actions/expenses';
 import { login, logout } from './actions/auth';
 import { firebase } from './firebase/firebase';
+import 'bootstrap'
 
 const store = configureStore();
 const jsx = (
@@ -30,13 +30,11 @@ ReactDOM.render(<p>Loading...</p>, document.getElementById('root') || document.c
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    store.dispatch(login(user.uid));
-    store.dispatch(startSetExpenses()).then(() => {
-      renderApp();
-      if (history.location.pathname === '/') {
-        history.push('/dashboard');
-      }
-    });
+    store.dispatch(login(user));
+    renderApp();
+    if (history.location.pathname === '/') {
+      history.push('/dashboard');
+    }
   } else {
     store.dispatch(logout());
     renderApp();

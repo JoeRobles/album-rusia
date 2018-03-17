@@ -2,17 +2,17 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
-import expensifyLogo from '../images/expensify_logo.png'
+import logo from '../images/russia-ball.png';
 
 const Header = ({ startLogout }) => (
   <header className="navbar navbar-expand-lg navbar-light bg-light">
     <a className="navbar-brand">
       <img
-        src={expensifyLogo}
-        className="d-inline-block align-top expensify-logo"
-        alt=""
+        src={logo}
+        className="d-inline-block align-top logo"
+        alt="Album Rusia"
       />
-        Expensify
+        Album Rusia
     </a>
     <button
       className="navbar-toggler"
@@ -35,15 +35,6 @@ const Header = ({ startLogout }) => (
             exact={true}
           >
             Dashboard
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink
-            className="nav-link"
-            to="/create"
-            activeClassName="is-active"
-          >
-            Create
           </NavLink>
         </li>
       </ul>

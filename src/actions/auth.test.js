@@ -2,12 +2,15 @@ import { firebase, googleAuthProvider } from '../firebase/firebase';
 import { login, startLogin, logout, startLogout } from './auth';
 
 it('should setup login action object', () => {
-  const uid = '123abc';
-  const action = login(uid);
+  const user = {
+    uid: '123abc'
+  };
+  const action = login(user);
 
   expect(action).toEqual({
     type: 'LOGIN',
-    uid,
+    uid: user.uid,
+    user,
   });
 });
 
