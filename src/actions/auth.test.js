@@ -9,7 +9,6 @@ it('should setup login action object', () => {
 
   expect(action).toEqual({
     type: 'LOGIN',
-    uid: user.uid,
     user,
   });
 });

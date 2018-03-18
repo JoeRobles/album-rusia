@@ -6,13 +6,15 @@ it('should set default state', () => {
 });
 
 it('should set uid for login', () => {
-  const uid = '123abc';
+  const user = {
+    uid: '123abc'
+  };
   const action = {
     type: 'LOGIN',
-    uid,
+    user,
   };
   const state = authReducer({}, action);
-  expect(state).toEqual({ uid });
+  expect(state).toEqual({user: user});
 });
 
 it('should clear uid for logout', () => {
