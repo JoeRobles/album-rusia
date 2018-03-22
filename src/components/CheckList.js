@@ -4,18 +4,26 @@ import StickerItem from './StickerItem';
 class CheckList extends Component {
   constructor() {
     super();
-    this.stickers = this.populateStickers();
+    this.state = {};
   }
 
-  populateStickers() {
-    let stickers = [];
-    stickers[0] = [];
+  componentWillMount() {
+    this.stickers = [];
+    this.stickers[0] = [];
+    this.onChange = this.onChange.bind(this);
     let row = 0;
     for (let number = 1; number <= 670; number++) {
-      stickers[row].push(number);
+      this.stickers[row].push(number);
+      let state = {};
+      state[number] = 0;
+      this.setState(state);
     }
+  }
 
-    return stickers;
+  onChange(value, number) {
+    let state = {};
+    state[number] = value;
+    this.setState(state);
   }
 
   render() {
@@ -26,7 +34,12 @@ class CheckList extends Component {
             <div key={row} className="form-row">
               {
                 row.map((sticker) => {
-                  return <StickerItem key={sticker} number={sticker}/>
+                  return <StickerItem
+                    key={sticker}
+                    number={sticker}
+                    onChange={this.onChange}
+                    value={this.state[sticker]}
+                  />
                 })
               }
             </div>
